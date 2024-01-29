@@ -1,0 +1,73 @@
+<html>
+<head>
+<center><h2>MY CALCULATOR - SRI LAKSHMI POLAVARAPU</h2></center>
+<style>
+#clear{width:110px;
+background-color:#A52A2A;
+color:white;}
+
+.formstyle{width:250px;
+height:390px;
+margin:auto;
+}
+
+input{width:50px;
+background-color:#808080;
+font-size:20px;}
+
+#input1{background-color:#DCDCDC;}
+
+#ans{width:220px;
+background-color:#2F4F4F;
+color:white;}
+
+#op{background-color:#A9A9A9;}
+#op1{background-color:#DCDCDC;}
+
+</style>
+</head>
+<body>
+<center>
+<div class="formstyle">
+<form name="forms">
+<input type="text" name="answer" id="ans"><br><br>
+
+<input type="button" value="1" onclick="forms.answer.value+='1' " id="input">
+<input type="button" value="2" onclick="forms.answer.value+='2' " id="input">
+<input type="button" value="3" onclick="forms.answer.value+='3' " id="input">
+<input type="button" value=" <= " NAME="backspace" onClick="forms.answer.value =
+forms.answer.value.substring(0,forms.answer.value.length*1 -1)">	 
+
+
+
+<br><br>
+<input type="button" value="4" onclick="forms.answer.value+='4' " id="input">
+<input type="button" value="5" onclick="forms.answer.value+='5' " id="input">
+<input type="button" value="6" onclick="forms.answer.value+='6' " id="input">
+<input type="button" value="+" onclick="forms.answer.value+='+' " id="op">
+
+<br><br>
+
+<input type="button" value="7" onclick="forms.answer.value+='7' " id="input">
+<input type="button" value="8" onclick="forms.answer.value+='8' " id="input">
+<input type="button" value="9" onclick="forms.answer.value+='9' " id="input">
+<input type="button" value="-" onclick="forms.answer.value+='-' " id="op">
+
+<br><br>
+
+<input type="button" value="0" onclick="forms.answer.value+='0' " id="input">
+<input type="button" value="." onclick="forms.answer.value+='.' " id="input1">
+<input type="button" value="%" onclick="forms.answer.value+='%' " id="op">
+<input type="button" value="*" onclick="forms.answer.value+='*' " id="op">
+<br><br>
+
+<input type="button" value="clear" onclick="forms.answer.value =' ' " id="clear">
+<input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)" id="op1">
+<input type="button" value="/" onclick="forms.answer.value+='/' " id="op">
+
+
+</form>
+</div>
+</center>
+</body>
+</html>
